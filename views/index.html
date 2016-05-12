@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+	{% block content %}
+
+<div>
+	<h3>Hotels</h3>
+	<select name="Hotels" form="Hotelform">
+	{% for hotel in hotels %}
+	  <option>{{hotel.name}}</option>
+	  {% endfor %}
+	</select>
+
+	<h3>Restaurants</h3>
+	<select name="Restaurants" form="Restaurantform">
+	{% for restaurant in restaurants %}
+	  <option>{{restaurant.name}}</option>
+	  {% endfor %}
+	</select>
+
+	<h3>Things to Do</h3>
+	<select name="Activities" form="Activitiesform">
+	{% for activity in activities %}
+	  <option>{{activity.name}}</option>
+	 {% endfor %}
+	</select>
+
+	<!-- make two divs -->
+</div>
+
+<div>
+	<h3>My Hotels</h3>
+	<select name="Hotels" form="Hotelform">
+	{% for hotel in hotels %}
+	  <option>{{hotel.name}}</option>
+	  {% endfor %}
+	</select>
+
+	<h3>My Restaurants</h3>
+	<select name="Restaurants" form="Restaurantform">
+	{% for restaurant in restaurants %}
+	  <option>{{restaurant.name}}</option>
+	  {% endfor %}
+	</select>
+
+	<h3>My Activities</h3>
+	<select name="Activities" form="Activitiesform">
+	{% for activity in activities %}
+	  <option>{{activity.name}}</option>
+	 {% endfor %}
+	</select>
+
+	<!-- make two divs. make buttons in second div. make second div unordered lists -->
+</div>
+{% endblock %}
